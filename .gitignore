@@ -1,0 +1,13 @@
+# Python
+__pycache__/
+*.pyc
+.venv/
+.venv*/
+.env
+.env.*
+
+# Data
+data/raw/
+data/curated/
+data/_tmp/
+data/_dq/
