@@ -6,3 +6,5 @@
 # - нормализация типов, дедуп по бизнес-ключу
 # - запись Parquet (snappy), row groups
 # - отчёт DQ в data/_dq/YYYY-MM-DD.json
+
+
