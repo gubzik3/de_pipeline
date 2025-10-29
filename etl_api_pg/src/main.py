@@ -1,6 +1,6 @@
-# main.py
-# Назначение: orchestration CLI
-# TODO:
-# - argparse (date-from/date-to, reload, parallel)
-# - цикл по датам: extract → transform
-# - exit codes: 0/2/1 (OK/soft errors/critical)
+from extract import extract
+from transform import transform
+
+dataset_path = 'fivethirtyeight/uber-pickups-in-new-york-city'
+extract(dataset_path)
+

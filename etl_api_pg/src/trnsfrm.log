@@ -1,0 +1,2 @@
+AwesomeLogger.__main__ 2025-10-29 11:20:25,413 DEBUG Summary: {'success': 6, 'bad-columns': 0, 'error': 0, 'pattern-mismatch': 13}
+AwesomeLogger.__main__ 2025-10-29 11:20:26,587 DEBUG Удалено дублей:82581

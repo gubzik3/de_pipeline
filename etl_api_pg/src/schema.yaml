@@ -1,0 +1,19 @@
+columns:
+  - name: Date/Time
+    type: Datetime
+    required: True
+  - name: Lat
+    type: float
+    required: True
+  - name: Lon
+    type: float
+    required: True
+  - name: Base
+    type: str
+    required: True
+
+type_columns:
+  - Date/Time: Datetime
+  - Lat: float
+  - Lon: float
+  - Base: str

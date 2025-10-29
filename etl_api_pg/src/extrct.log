@@ -1,0 +1,31 @@
+AwesomeLogger.extract 2025-10-28 11:20:15,610 DEBUG ֽאקטםאול חאדנףחךף ִאעאסועא
+AwesomeLogger.extract 2025-10-28 11:21:01,526 DEBUG other-American_B01362.csv טלווע סעמכבצû Index(['DATE', 'TIME', 'PICK UP ADDRESS', 'Unnamed: 3', 'Unnamed: 4',
+       'Unnamed: 5'],
+      dtype='object')
+AwesomeLogger.extract 2025-10-28 11:21:01,750 DEBUG other-Carmel_B00256.csv טלווע סעמכבצû Index(['Date', 'Time', 'PU_Adress', 'Base_No'], dtype='object')
+AwesomeLogger.extract 2025-10-28 11:21:02,074 DEBUG other-Dial7_B00887.csv טלווע סעמכבצû Index(['Date', 'Time', 'State', 'PuFrom', 'Address', 'Street'], dtype='object')
+AwesomeLogger.extract 2025-10-28 11:21:02,178 DEBUG other-Diplo_B01196.csv טלווע סעמכבצû Index(['Date', 'Time', 'PU_Address'], dtype='object')
+AwesomeLogger.extract 2025-10-28 11:21:02,195 DEBUG other-Federal_02216.csv טלווע סעמכבצû Index(['Date', 'Time', 'PU_Address', 'DO_Address', 'Routing Details',
+       'PU_Address.1', 'Status'],
+      dtype='object')
+AwesomeLogger.extract 2025-10-28 11:21:02,226 DEBUG other-FHV-services_jan-aug-2015.csv טלווע סעמכבצû Index(['Base Number', 'Base Name', 'Pick Up Date', 'Number of Trips',
+       'Number of Vehicles'],
+      dtype='object')
+AwesomeLogger.extract 2025-10-28 11:21:02,380 DEBUG other-Firstclass_B01536.csv טלווע סעמכבצû Index(['DATE', 'TIME', 'PICK UP ADDRESS'], dtype='object')
+AwesomeLogger.extract 2025-10-28 11:21:02,574 DEBUG other-Highclass_B01717.csv טלווע סעמכבצû Index(['DATE', 'TIME', 'PU_Address'], dtype='object')
+AwesomeLogger.extract 2025-10-28 11:21:02,732 DEBUG other-Lyft_B02510.csv טלווע סעמכבצû Index(['time_of_trip', 'start_lat', 'start_lng', 'Unnamed: 3'], dtype='object')
+AwesomeLogger.extract 2025-10-28 11:21:03,090 DEBUG other-Prestige_B01338.csv טלווע סעמכבצû Index(['DATE', 'TIME', 'PICK UP ADDRESS'], dtype='object')
+AwesomeLogger.extract 2025-10-28 11:21:03,234 DEBUG other-Skyline_B00111.csv טלווע סעמכבצû Index(['Date', 'Time', '    Street_Address ', '    City_State ', 'Unnamed: 4',
+       'Unnamed: 5'],
+      dtype='object')
+AwesomeLogger.extract 2025-10-28 11:21:03,250 DEBUG Uber-Jan-Feb-FOIL.csv טלווע סעמכבצû Index(['dispatching_base_number', 'date', 'active_vehicles', 'trips'], dtype='object')
+AwesomeLogger.extract 2025-10-28 11:21:03,499 DEBUG uber-raw-data-apr14.csv טלווע סעמכבצû Index(['Date/Time', 'Lat', 'Lon', 'Base'], dtype='object')
+AwesomeLogger.extract 2025-10-28 11:21:03,868 DEBUG uber-raw-data-aug14.csv טלווע סעמכבצû Index(['Date/Time', 'Lat', 'Lon', 'Base'], dtype='object')
+AwesomeLogger.extract 2025-10-28 11:21:11,560 DEBUG uber-raw-data-janjune-15.csv טלווע סעמכבצû Index(['Dispatching_base_num', 'Pickup_date', 'Affiliated_base_num',
+       'locationID'],
+      dtype='object')
+AwesomeLogger.extract 2025-10-28 11:21:12,129 DEBUG uber-raw-data-jul14.csv טלווע סעמכבצû Index(['Date/Time', 'Lat', 'Lon', 'Base'], dtype='object')
+AwesomeLogger.extract 2025-10-28 11:21:12,453 DEBUG uber-raw-data-jun14.csv טלווע סעמכבצû Index(['Date/Time', 'Lat', 'Lon', 'Base'], dtype='object')
+AwesomeLogger.extract 2025-10-28 11:21:12,773 DEBUG uber-raw-data-may14.csv טלווע סעמכבצû Index(['Date/Time', 'Lat', 'Lon', 'Base'], dtype='object')
+AwesomeLogger.extract 2025-10-28 11:21:13,262 DEBUG uber-raw-data-sep14.csv טלווע סעמכבצû Index(['Date/Time', 'Lat', 'Lon', 'Base'], dtype='object')
+AwesomeLogger.extract 2025-10-28 11:21:13,263 DEBUG ַאדנףחךא חאגונרוםא
