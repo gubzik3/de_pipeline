@@ -13,5 +13,6 @@ data/_tmp/
 data/_dq/
 
 #etl_api_pg
+etl_api_pg/src/data/*
 etl_api_pg/src/trnsfrm.log
 etl_api_pg/src/extrct.log
