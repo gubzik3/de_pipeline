@@ -1,2 +1,4 @@
-AwesomeLogger.__main__ 2025-10-29 11:20:25,413 DEBUG Summary: {'success': 6, 'bad-columns': 0, 'error': 0, 'pattern-mismatch': 13}
-AwesomeLogger.__main__ 2025-10-29 11:20:26,587 DEBUG Удалено дублей:82581
+AwesomeLogger.extract 2025-11-09 17:44:59,384 DEBUG Начинаем загрузку Датасета
+AwesomeLogger.extract 2025-11-09 17:45:15,706 DEBUG Загрузка завершена
+AwesomeLogger.transform 2025-11-09 17:45:17,812 DEBUG Summary: {'success': 6, 'bad-columns': 0, 'error': 0, 'pattern-mismatch': 14}
+AwesomeLogger.transform 2025-11-09 17:45:19,032 DEBUG Удалено дублей:82581
