@@ -13,7 +13,7 @@ columns:
     required: True
 
 type_columns:
-  - Date/Time: Datetime
+  - Date/Time: datetime
   - Lat: float
   - Lon: float
   - Base: str

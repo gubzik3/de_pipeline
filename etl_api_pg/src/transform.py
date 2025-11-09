@@ -11,11 +11,7 @@ from pathlib import Path
 log = logger.setup_logger(file_name="trnsfrm.log")
 log = logger.get_logger(__name__)
 
-global_path = Path("C:/Users/Влад/PycharmProjects/de_pipeline/etl_api_pg/src/data/kaggle")
-dataset_path = 'fivethirtyeight/uber-pickups-in-new-york-city'
-pattern = re.compile(r"uber-raw-data.*14.*\.csv$")
-data_directory = global_path/dataset_path
-
+#Функция detect_encoding принимает на вход файл, результатом работы будет кадировка исходного файла
 def detect_encoding(file_):
     encodings = ['utf-8', 'cp1252', 'latin1', 'utf-16', 'cp1251']
     with open(file_, 'rb') as f:
@@ -33,6 +29,7 @@ def detect_encoding(file_):
             continue
     return 'latin1'
 
+#Функция check_columns принимает Датафрейм и проверяет соответствует ли его содержимое требованиям
 def check_columns(df):
     with open('schema.yaml', 'r', encoding='utf-8') as f:
         schema = yaml.safe_load(f)
@@ -40,12 +37,15 @@ def check_columns(df):
     expected_columns = [col['name'] for col in schema['columns']]
     return actual_columns == expected_columns
 
+#Функция определяет разделитель
 def detect_delimeter(file_, encoding):
     with open(file_, 'r', encoding=encoding) as f:
         sample = f.read(5000)
         sniffer = csv.Sniffer()
         delimiter = sniffer.sniff(sample).delimiter
     return delimiter
+
+#Создаёт Датафрейм из всех файлов, которые соответствуют проверке из check_columns
 def create_df(data_directory, pattern):
     dfs = []
     report = {"success": 0, "bad-columns": 0, "error": 0, "pattern-mismatch": 0}
@@ -73,22 +73,25 @@ def create_df(data_directory, pattern):
     log.debug(f"Summary: {report}")
     return df_all
 
+#Приводим все поля к одному виду
 def column_cast(df, column_types):
     for typle_ in column_types:
         for col, col_type in typle_.items():
             if col_type == 'datetime':
                 df[col] = pd.to_datetime(df[col], errors='coerce')
+                df[col] = df[col].dt.strftime('%Y-%m-%d %H:%M:%S')
             elif col_type == 'float':
                 df[col] = pd.to_numeric(df[col], errors='coerce')
             elif col_type == 'str':
                 df[col] = df[col].astype('str')
-    df.rename(columns={'Date/Time': 'datetime',
+    df.rename(columns={'Date/Time': 'datetime_',
                        'Lon': 'lon',
                        'Lat': 'lat',
                        'Base': 'base'}, inplace=True)
     return df
 
-def transform():
+#Собираем все функции в кучу и на выходи получаем готовый DF
+def transform(data_directory, pattern):
     df_all = create_df(data_directory, pattern)
     n_before = len(df_all)
     df_all.drop_duplicates(inplace=True)
@@ -100,4 +103,5 @@ def transform():
     with open('schema.yaml', 'r', encoding='utf-8') as f:
         schema = yaml.safe_load(f)
         df_all = column_cast(df_all, schema['type_columns'])
+        df_all['id'] = range(1, len(df_all) + 1)
     return df_all
