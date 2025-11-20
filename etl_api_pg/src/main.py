@@ -24,9 +24,9 @@ columns = {
 }
 def main():
     extract(dataset_path)
-    batch_load(transform(data_directory, pattern),        # DataFrame
+    batch_load(transform(data_directory, pattern),          # DataFrame
                 engine,                                     # Путь к базе
-                main_table,                                    # Основная таблица
+                main_table,                                  # Основная таблица
                 name_stagind_table,
                 columns,                                    # Словарь имя:тип (структура таблицы)
                 batch_size
